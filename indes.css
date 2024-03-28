@@ -1,0 +1,138 @@
+/*  
+
+## Colors
+
+### Primary
+
+- Tomato: hsl(4, 100%, 67%)
+
+### Neutral
+
+- Dark Slate Grey: hsl(234, 29%, 20%)
+- Charcoal Grey: hsl(235, 18%, 26%)
+- Grey: hsl(231, 7%, 60%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Roboto](https://fonts.google.com/specimen/Roboto)
+- Weights: 400, 700
+
+*/
+
+:root {
+  --tomato: hsl(4, 100%, 67%);
+  --dark-slate-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: var(--grey);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 2.5rem;
+  gap: 2.5rem;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--white);
+  padding: 1.5rem;
+  max-width: 400px;
+}
+
+.container form h1 {
+  font-size: 3rem;
+  margin-bottom: 1.125rem;
+}
+
+.container form p {
+  margin-bottom: 2rem;
+  max-width: 400px;
+}
+
+.container form ul {
+  margin-bottom: 1.5rem;
+}
+
+.container form ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  list-style: none;
+}
+
+.container form ul li img {
+  margin-right: 0.75rem;
+}
+
+.container form h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 600px;
+  font-size: 14px;
+}
+
+.container form input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  padding: 1.25rem 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.container form input {
+  type: email;
+}
+::placeholder {
+  font-size: 17px;
+}
+
+.container form button {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+  padding: 1rem 3rem;
+  width: 100%;
+  background-color: var(--dark-slate-grey);
+  color: white;
+  cursor: pointer;
+}
+
+.container form button:hover {
+  background-color: var(--tomato);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+}
